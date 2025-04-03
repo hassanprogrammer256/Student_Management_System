@@ -1,5 +1,6 @@
 from config import *
 
+
 class StudentManagementApp:
     def __init__(self, root, system):
         self.system = system

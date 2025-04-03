@@ -7,6 +7,7 @@ from tkinter import messagebox, simpledialog
 from System import *
 from Authenticate import *
 from config import *
+from banner import *
 
 
 

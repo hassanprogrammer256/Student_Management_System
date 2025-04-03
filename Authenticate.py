@@ -1,5 +1,6 @@
 from config import *
 from constants import *
+from banner import Banner
 
 class Authenticate:
     def __init__(self,window):
@@ -16,5 +17,7 @@ class Authenticate:
     #   -----AUTH LABELFRAME_____
         Auth_LabelFrame = LabelFrame(window,bg=WHITE,width=WINDOW_WIDTH,height =WINDOW_HEIGHT)
         Auth_LabelFrame.place(x=0,y=0)
+        WelcomeBanner = Banner(window,color=GREEN_PRIMARY,width=WINDOW_WIDTH,height = (WINDOW_HEIGHT // 35),x=0,y=0,hovercolor=GREEN_SECONDARY)
+        WelcomeBanner.draw()
 
   
