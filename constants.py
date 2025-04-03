@@ -1,0 +1,9 @@
+WINDOW_WIDTH,WINDOW_HEIGHT = 1500,800
+
+# ------COLORS----------
+
+WHITE ='#FFFFFF'
+BLACK ='#000000'
+# RED = (255,0,0)
+# GREEN = (0,255,0)
+# BLUE = (0,0,255)
