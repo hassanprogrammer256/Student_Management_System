@@ -8,7 +8,7 @@ class StudentManagementApp:
         root.resizable(False, False) 
         root.config(bg = WHITE)
         root.title("Student Management System")
-        Login.draw(root)
+        Authenticate.draw(root,'log in')
 
 if __name__ == "__main__":
     root = tk.Tk()
