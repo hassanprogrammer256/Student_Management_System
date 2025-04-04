@@ -91,9 +91,25 @@ class Authenticate:
              
                 entry.place(x=140, y=20 + (i * 50))
                 
+                
         # ----LOGIN/REGISTER BUTTONS------------------------
         SubmissionBtn = Button(FormDataLabelFrame,text=ButtonText,bg=GREEN_PRIMARY,fg=WHITE,font=('Arial', 15), bd=0,cursor='hand2',width=30)
         SubmissionBtn.place(x=40, y=formData_height-65)
+        
+         # -------------HOVER EFFECTS-------------
+        def on_submit_enter(event):
+            SubmissionBtn['bg'] = '#218838'  # Darker green
+      
+          
+
+        def on_submit_leave(event):
+            SubmissionBtn['bg'] = GREEN_PRIMARY
+            SubmissionBtn['fg'] = WHITE
+           
+
+# Bind hover events to the Submission button
+        SubmissionBtn.bind("<Enter>", on_submit_enter)
+        SubmissionBtn.bind("<Leave>", on_submit_leave)
         
         # ----OPTIONS----
         
@@ -101,6 +117,42 @@ class Authenticate:
         options_label.place(x=70, y=formData_height-24)
         action_btn = Label(FormDataLabelFrame, text=ButtonText, bg=WHITE, fg=BLACK, font=font.Font(underline=True),cursor='hand2', )
         action_btn.place(x=Action_x, y=formData_height-24)
+        
+        def on_action_enter(event):
+    action_btn['bg'] = '#f0f0f0'  # Light gray background
+    action_btn['fg'] = '#007bff'  # Change to blue
+    action_btn['font'] = font.Font(underline=True, size=14)  # Increase font size
+
+        def on_action_leave(event):
+            action_btn['bg'] = WHITE
+            action_btn['fg'] = BLACK
+            action_btn['font'] = font.Font(underline=True)
+
+# Bind hover events to the action button
+        action_btn.bind("<Enter>", on_action_enter)
+        action_btn.bind("<Leave>", on_action_leave)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       
+        
+        
         
     
     
