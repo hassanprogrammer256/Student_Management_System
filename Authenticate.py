@@ -119,12 +119,11 @@ class Authenticate:
         action_btn.place(x=Action_x, y=formData_height-24)
         
         def on_action_enter(event):
-    action_btn['bg'] = '#f0f0f0'  # Light gray background
-    action_btn['fg'] = '#007bff'  # Change to blue
-    action_btn['font'] = font.Font(underline=True, size=14)  # Increase font size
+          
+            action_btn['fg'] = RED
 
         def on_action_leave(event):
-            action_btn['bg'] = WHITE
+      
             action_btn['fg'] = BLACK
             action_btn['font'] = font.Font(underline=True)
 

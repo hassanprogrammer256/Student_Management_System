@@ -1,5 +1,6 @@
 from config import *
-
+from constants import *
+from Authenticate import *
 
 class StudentManagementApp:
     def __init__(self, root, system):
